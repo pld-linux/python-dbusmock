@@ -1,15 +1,15 @@
 #
 # Conditional build:
-%bcond_without	tests	# unit tests
+%bcond_with	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module
 
 Summary:	Mock D-Bus objects
 Summary(pl.UTF-8):	Atrapa obiektów D-Bus
 Name:		python-dbusmock
 # keep 0.19 here for python2 support
 Version:	0.19
-Release:	5
+Release:	6
 License:	LGPL v3+
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/python-dbusmock/
